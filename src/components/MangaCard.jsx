@@ -4,6 +4,9 @@ const MangaCard = ({manga}) => {
   return (
     <div>
         {manga.title}
+        {manga.summary}
+        {manga.title}
+        {manga.title}
     </div>
     
   )

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import './maga-data.jsx'
 import MangaList from "./components/MangaList.jsx";
 import './app.css'
+import Form from './components/Form'
 
 
 function App() {
@@ -192,10 +193,10 @@ function App() {
 
   return (
     <>
-      <input type="text" />
       
-      <button type="submit">Submit</button>
-
+      
+      
+      <Form mangaSearch={getAnime}/>
       <MangaList mangas={mangas} />
     </>
   )

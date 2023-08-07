@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 
-function Form({movieSearch}) {
+function Form({mangaSearch}) {
 
     const [formData, setFormData] = useState({
         searchTerm: ''
@@ -22,10 +22,10 @@ function Form({movieSearch}) {
 
   return (
      
-        <StyledForm onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <input type='text' value={formData.searchTerm} onChange={handleChange}/>
             <input type='submit' value="submit" />
-        </StyledForm>
+        </form>
        
   )
 }
