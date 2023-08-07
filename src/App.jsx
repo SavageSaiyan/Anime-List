@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './maga-data.jsx'
 import MangaList from "./components/MangaList.jsx";
+import './app.css'
 
 
 function App() {
@@ -155,22 +156,22 @@ function App() {
 
   const getAnime = async () => {
     const apiKey = import.meta.env.VITE_API_KEY
-    // const url = 'https://mangaverse-api.p.rapidapi.com/manga/fetch?page=1&genres=Harem%2CFantasy';
-    // const options = {
-    //   method: 'GET',
-    //   headers: {
-    //     'X-RapidAPI-Key': '',
-    //     'X-RapidAPI-Host': 'mangaverse-api.p.rapidapi.com'
-    //   }
-    // };
+    const url = 'https://mangaverse-api.p.rapidapi.com/manga/fetch?page=1&genres=Harem%2CFantasy';
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '',
+        'X-RapidAPI-Host': 'mangaverse-api.p.rapidapi.com'
+      }
+    };
     
-    // try {
-    //   const response = await fetch(url, options);
-    //   const result = await response.json();
-    //   console.log(result);
-    // } catch (error) {
-    //   console.error(error);
-    // }
+    try {
+      const response = await fetch(url, options);
+      const result = await response.json();
+      console.log(result);
+    } catch (error) {
+      console.error(error);
+    }
 
     setMangas(mangas)
     mangas.map((manga)=> {
@@ -191,7 +192,11 @@ function App() {
 
   return (
     <>
-      <MangaList />
+      <input type="text" />
+      
+      <button type="submit">Submit</button>
+
+      <MangaList mangas={mangas} />
     </>
   )
 }

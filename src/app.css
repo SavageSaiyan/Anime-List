@@ -1,0 +1,11 @@
+.container {
+    border: 1px solid black;
+    display: inline-block;
+    width: 1000px;
+}
+
+.img-container {
+    border: 1px solid green;
+    
+    
+}
