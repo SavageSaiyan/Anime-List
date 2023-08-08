@@ -24,7 +24,7 @@ function Form({mangaSearch}) {
      
         <form onSubmit={handleSubmit}>
             <input type='text' value={formData.searchTerm} onChange={handleChange}/>
-            <input type='submit' value="submit" />
+            <input type='submit' value="submit" /> 
         </form>
        
   )

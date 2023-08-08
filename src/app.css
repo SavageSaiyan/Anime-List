@@ -6,7 +6,11 @@
 }
 
 .img-container {
-    border: 1px solid green;
+    border: 1px solid red;
     justify-content: space-between;
     
+}
+
+form {
+    margin: auto;
 }
