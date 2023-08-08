@@ -166,6 +166,7 @@ function App() {
       }
     };
     
+    // get data from the api into the search bar
     try {
       const response = await fetch(url, options);
       const result = await response.json();
