@@ -3,12 +3,18 @@
     display: flex;
     width: 1000px;
     height: 800px;
+    
 }
 
 .img-container {
     border: 1px solid red;
     justify-content: space-between;
     
+}
+
+img {
+    height: 200px;
+
 }
 
 form {
