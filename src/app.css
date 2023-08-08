@@ -17,5 +17,7 @@ img {
 }
 
 form {
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
 }
