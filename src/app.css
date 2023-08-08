@@ -1,20 +1,19 @@
 .container {
     border: 1px solid black;
     display: flex;
-    width: 1000px;
     height: 800px;
-    
+    justify-content: center;
 }
 
 .img-container {
     border: 1px solid red;
-    justify-content: space-between;
+    justify-content: center;
     
 }
 
 img {
     height: 200px;
-
+    justify-content: center;
 }
 
 form {
