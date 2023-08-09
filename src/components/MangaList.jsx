@@ -29,6 +29,7 @@ const MangaList = ({ anime }) => {
         <div className="animeDetails">
           <img src={details.images.jpg.large_image_url} alt={details.title} />
           <h1>Title: {details.title}</h1>
+          <p><b>Summary:</b> {details.synopsis}</p>
         </div>
       )}
         </>

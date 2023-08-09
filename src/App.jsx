@@ -49,7 +49,7 @@ function App() {
 
   useEffect(()=> {
     console.log("useEffectcall")
-      getAnime()
+      getAnime("")
     // getAnime('Abandoned Universe');
   }, [])
 
