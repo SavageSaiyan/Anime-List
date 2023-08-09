@@ -1,27 +1,38 @@
-import React from 'react'
-import MangaCard from './MangaCard'
+import React, { useState } from "react";
 
 
-const MangaList = ({mangas}) => {
 
-console.log(mangas)
+const MangaList = ({ anime }) => {
+  const [details, setDetails] =  useState(null) 
+  const animes = anime.data;
 
-  return (
-    <div className='container'>
+  const handleClick = (anime) => {
+        setDetails(anime)
+  }
+    return (
+        <>
         
-        {
+        
+        <div className="container">
 
+          
 
-            mangas.map((manga)=>(
-                <div className='img-container'>
-                 <img key={manga.id} src={manga.thumb} />
-                <MangaCard manga={manga}/>
-                </div> 
-            ))
- 
-        }
-    </div>
-  )
-}
+            {animes &&
+                animes.map((ani, i) => (
+                    <div key={i} className="img-container">
+                        <img src={ani.images.jpg.large_image_url} onClick={(()=> handleClick(ani))} />
+                    </div>
+                ))}
+        </div>
 
-export default MangaList
+        {details && (
+        <div className="animeDetails">
+          <img src={details.images.jpg.large_image_url} alt={details.title} />
+          <h1>{details.title}</h1>
+        </div>
+      )}
+        </>
+    );
+};
+
+export default MangaList;

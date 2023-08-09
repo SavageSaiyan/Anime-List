@@ -20,6 +20,8 @@ function Form({mangaSearch}) {
         mangaSearch(formData.searchTerm)
     }
 
+    
+
   return (
      
         <form onSubmit={handleSubmit}>

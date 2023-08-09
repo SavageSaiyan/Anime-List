@@ -3,17 +3,45 @@ body {
 }
 
 
-.container {
-    /* border: 1px solid black; */
-    display: flex;
-    flex-wrap: nowrap;
-    /* height: 800px; */
-    
-    overflow: auto;
+
+.read-list {
+    width: 200px;
+    height: 500px;
+    border: 2px solid red;
+    text-align: center;
 }
 
+
+
+.container {
+    border: 1px solid black; 
+     display: flex; 
+    flex-wrap: nowrap; 
+    max-height: 400px; 
+     max-width: 800px;;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:auto;
+}
+
+.animeDetails {
+    border: 2px solid blue;
+    height: 400px;
+    width: 830px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 20px;
+   display: flex;
+}
+
+.animeDetails img {
+    margin-top: 30px;
+    width: 100px
+}
+
+
 .img-container {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: center;
     align-items: center;
     min-width: 145px;
@@ -22,14 +50,26 @@ body {
     background-color: #c9c5c5;
     padding: 0px;
     margin: 3px;
-
+    /* overflow: auto; */
+    white-space: nowrap;
 }
 
 img {
     height: 200px;
+    width: 130px;
     justify-content: center;
     /* border-radius: 25px; */
+    margin-left: 10%;
 }
+
+
+.manga-info {
+    
+    margin-left: 10%;
+    
+}
+
+
 
 form {
     justify-content: center;
