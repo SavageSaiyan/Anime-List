@@ -3,7 +3,7 @@ import './maga-data.jsx'
 import MangaList from "./components/MangaList.jsx";
 import './app.css'
 import Form from './components/Form'
-
+import { WatchList } from "./components/WatchList.jsx";
 
 function App() {
  const [anime, setAnime] = useState({})
@@ -63,6 +63,7 @@ function App() {
       
       <Form mangaSearch={getAnime} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <MangaList anime={anime} />
+      <WatchList />
     </>
   )
 }
