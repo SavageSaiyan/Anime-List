@@ -5,7 +5,7 @@ const MangaCard = ({manga}) => {
     <div>
       {/* added manga title  */}
        <h3>Title: {manga.title}</h3> 
-       
+        {/* added manga summary  */}
         <p>{manga.summary}</p>
         <h4>Author: {manga.authors.map((author)=> (
           <>
