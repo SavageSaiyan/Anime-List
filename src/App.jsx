@@ -28,7 +28,7 @@ function App() {
     
     try {
       //const response = await fetch(url, options);
-      const response = await fetch(`https://api.jikan.moe/v4/anime?q=${"naruto"}`)
+      const response = await fetch(`https://api.jikan.moe/v4/anime?q=${searchTerm}`)
       const result = await response.json();
       setAnime(result)
       console.log(result); 
@@ -42,7 +42,9 @@ function App() {
     // })
   }
 
-
+  const handleSubmit = {
+    
+  }
 
 
   useEffect(()=> {

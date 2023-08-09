@@ -28,15 +28,18 @@ body {
     border: 2px solid blue;
     height: 400px;
     width: 830px;
-   margin-right: auto;
-   margin-left: auto;
+   /* margin-right: auto;
+   margin-left: auto; */
    margin-top: 20px;
    display: flex;
 }
 
 .animeDetails img {
-    margin-top: 30px;
-    width: 100px
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+
 }
 
 

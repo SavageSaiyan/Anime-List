@@ -28,7 +28,7 @@ const MangaList = ({ anime }) => {
         {details && (
         <div className="animeDetails">
           <img src={details.images.jpg.large_image_url} alt={details.title} />
-          <h1>{details.title}</h1>
+          <h1>Title: {details.title}</h1>
         </div>
       )}
         </>
