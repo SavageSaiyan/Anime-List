@@ -15,9 +15,8 @@ console.log(mangas)
             mangas.map((manga)=>(
                 <div className='img-container'>
                  <img key={manga.id} src={manga.thumb} />
-                {/* <MangaCard manga={manga}/> */}
-                </div>
-               
+                <MangaCard manga={manga}/>
+                </div> 
             ))
  
         }

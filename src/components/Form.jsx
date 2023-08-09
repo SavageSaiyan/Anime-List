@@ -17,7 +17,7 @@ function Form({mangaSearch}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        movieSearch(formData.searchTerm)
+        mangaSearch(formData.searchTerm)
     }
 
   return (
