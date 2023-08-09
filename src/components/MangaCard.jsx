@@ -3,7 +3,9 @@ import React from 'react'
 const MangaCard = ({manga}) => {
   return (
     <div>
+      {/* added manga title  */}
        <h3>Title: {manga.title}</h3> 
+       
         <p>{manga.summary}</p>
         <h4>Author: {manga.authors.map((author)=> (
           <>
