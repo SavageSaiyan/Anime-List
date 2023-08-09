@@ -7,6 +7,7 @@ const MangaCard = ({manga}) => {
        <h3>Title: {manga.title}</h3> 
         {/* added manga summary  */}
         <p>{manga.summary}</p>
+        {/* added manga authors */}
         <h4>Author: {manga.authors.map((author)=> (
           <>
             {author}, &nbsp;
