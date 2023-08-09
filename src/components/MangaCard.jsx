@@ -13,6 +13,7 @@ const MangaCard = ({manga}) => {
             {author}, &nbsp;
           </>
         ))}</h4>
+        {/* added manga type */}
         <h4>Type: {manga.type}</h4>
         <h4>Genres: {manga.genres.map((genre)=> (
           <>
