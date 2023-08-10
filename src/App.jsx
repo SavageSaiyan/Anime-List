@@ -4,7 +4,7 @@ import MangaList from "./components/MangaList.jsx";
 import './app.css'
 import Form from './components/Form'
 import { WatchList } from "./components/WatchList.jsx";
-import AnimeCarousel from './AnimeCarousel';
+import AnimeCarousel from './components/AnimeCarousel1.jsx';
 
 function App() {
  const [anime, setAnime] = useState({})
