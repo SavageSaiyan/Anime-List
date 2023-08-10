@@ -44,4 +44,7 @@ const AnimeCarousel = () => {
   );
 };
 
+
+// set the timing interval for the images for carousel
+
 export default AnimeCarousel;
