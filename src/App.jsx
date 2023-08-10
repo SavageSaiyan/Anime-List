@@ -4,6 +4,7 @@ import MangaList from "./components/MangaList.jsx";
 import './app.css'
 import Form from './components/Form'
 import { WatchList } from "./components/WatchList.jsx";
+import AnimeCarousel from './AnimeCarousel';
 
 function App() {
  const [anime, setAnime] = useState({})
@@ -64,6 +65,7 @@ function App() {
       <Form mangaSearch={getAnime} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <MangaList anime={anime} />
       <WatchList />
+      <AnimeCarousel />
     </>
   )
 }
