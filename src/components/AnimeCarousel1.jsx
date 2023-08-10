@@ -46,5 +46,5 @@ const AnimeCarousel = () => {
 
 
 // set the timing interval for the images for carousel
-
+// add 4 images for carousel 
 export default AnimeCarousel;
