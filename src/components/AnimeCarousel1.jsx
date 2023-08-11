@@ -3,20 +3,23 @@ import React, { useState, useEffect } from 'react';
 const images = [
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1600/134703l.jpg',
-    backgroundColor: 'rgba(71, 71, 70, 0.5)', // Blue color with 50% opacity,
-    
+    backgroundColor: 'rgba(71, 71, 70, 0.5)', // grey color with 50% opacity,
+    title: 'JuJutsu Kaisen: 2nd Season'
   },
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1765/135099l.jpg',
     backgroundColor: 'rgba(128, 0, 128, 0.5)', // purple color with 50% opacity,
+    title: 'Kimetsu no Yaiba: Katanakaji no Sato-hen (4th Season)'
   },
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1732/137465l.jpg',
-    backgroundColor: 'rgba(71, 71, 70, 0.5)', // blue color with 50% opacity,
+    backgroundColor: 'rgba(71, 71, 70, 0.5)', // grey color with 50% opacity,
+    title: 'Mushoku Tensei II: Isekai Ittara Honki Dasu'
   },
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1161/136691l.jpg',
     backgroundColor: 'rgba(128, 0, 128, 0.5)', // Purple color with 50% opacity,
+    title: 'Bungou Stray Dogs 5th Season'
   },
   // ... add more images with different colors
 ];
@@ -83,10 +86,11 @@ const AnimeCarousel = () => {
     </a>
     <h2 className='carousel-text'>Popular Anime</h2>
     <img src={currentImage.imageUrl} alt={`Image ${currentIndex}`} style={imgStyle} />
+    <h2>{currentImage.title}</h2>
     <a className="carousel-control-next" style={nextArrowStyle} onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}>
       &gt;
     </a>
-    {/* <h2 className='carousel-text'>Popular Anime</h2> */}
+    {/* <h4 className='carousel-details'>details</h4> */}
   </div>
   );
 };
