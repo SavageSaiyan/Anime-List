@@ -3,20 +3,20 @@ import React, { useState, useEffect } from 'react';
 const images = [
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1600/134703l.jpg',
-    backgroundColor: 'blue',
+    backgroundColor: 'rgba(71, 71, 70, 0.5)', // Blue color with 50% opacity,
     
   },
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1765/135099l.jpg',
-    backgroundColor: 'green',
+    backgroundColor: 'rgba(128, 0, 128, 0.5)', // purple color with 50% opacity,
   },
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1732/137465l.jpg',
-    backgroundColor: 'red',
+    backgroundColor: 'rgba(71, 71, 70, 0.5)', // blue color with 50% opacity,
   },
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1161/136691l.jpg',
-    backgroundColor: 'purple',
+    backgroundColor: 'rgba(128, 0, 128, 0.5)', // Purple color with 50% opacity,
   },
   // ... add more images with different colors
 ];
@@ -36,6 +36,8 @@ const AnimeCarousel = () => {
 
   const carouselStyle = {
     backgroundColor: currentImage.backgroundColor,
+    border: '2px solid white',
+    borderRadius: '10px',
     height: '150px', // Set a fixed height for the carousel
     display: 'flex',
     alignItems: 'center',
@@ -73,6 +75,7 @@ const AnimeCarousel = () => {
   };
 
 
+
   return (
     <div className="carousel" style={carouselStyle}>
     <a className="carousel-control-prev" style={prevArrowStyle} onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)}>
@@ -82,6 +85,7 @@ const AnimeCarousel = () => {
     <a className="carousel-control-next" style={nextArrowStyle} onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}>
       &gt;
     </a>
+    <h2 className='carousel-text'></h2>
   </div>
   );
 };
