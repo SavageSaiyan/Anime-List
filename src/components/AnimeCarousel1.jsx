@@ -4,6 +4,7 @@ const images = [
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1600/134703l.jpg',
     backgroundColor: 'blue',
+    
   },
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1765/135099l.jpg',
@@ -35,12 +36,53 @@ const AnimeCarousel = () => {
 
   const carouselStyle = {
     backgroundColor: currentImage.backgroundColor,
+    height: '150px', // Set a fixed height for the carousel
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative', // Add positioning to align the controls
+    top: '200px',
+   
   };
+
+  const imgStyle = {
+    // maxWidth: '100%',
+    // maxHeight: '100%',
+    width: '150px',
+    height: '130px',
+    marginRight: '600px'
+  };
+
+  const arrowStyle = {
+    position: 'absolute',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    fontSize: '2rem',
+    color: 'white',
+    cursor: 'pointer',
+  };
+
+  const prevArrowStyle = {
+    ...arrowStyle,
+    left: '10px', // Adjust the distance from the left edge
+  };
+
+  const nextArrowStyle = {
+    ...arrowStyle,
+    right: '10px', // Adjust the distance from the right edge
+  };
+
 
   return (
     <div className="carousel" style={carouselStyle}>
-      <img src={currentImage.imageUrl} alt={`Image ${currentIndex}`} />
-    </div>
+    <a className="carousel-control-prev" style={prevArrowStyle} onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)}>
+      &lt;
+    </a>
+    <img src={currentImage.imageUrl} alt={`Image ${currentIndex}`} style={imgStyle} />
+    <a className="carousel-control-next" style={nextArrowStyle} onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}>
+      &gt;
+    </a>
+  </div>
   );
 };
 
