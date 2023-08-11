@@ -119,11 +119,10 @@ button  {
 }
 
 /* add carousel css */
-.carousel {
 
-}
 
 
 .carousel-text {
-    
+    color: white;
+    font-family:'Aghara Pro',sans-serif;
 }
