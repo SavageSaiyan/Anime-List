@@ -55,7 +55,7 @@ const AnimeCarousel = () => {
     // maxHeight: '100%',
     width: '150px',
     height: '130px',
-    marginRight: '600px'
+    marginRight: '300px'
   };
 
   const arrowStyle = {
@@ -86,7 +86,7 @@ const AnimeCarousel = () => {
     </a>
     <h2 className='carousel-text'>Popular Anime</h2>
     <img src={currentImage.imageUrl} alt={`Image ${currentIndex}`} style={imgStyle} />
-    <h2>{currentImage.title}</h2>
+    <h2 className='carousel-title'>{currentImage.title}</h2>
     <a className="carousel-control-next" style={nextArrowStyle} onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}>
       &gt;
     </a>
