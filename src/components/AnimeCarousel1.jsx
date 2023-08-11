@@ -81,11 +81,12 @@ const AnimeCarousel = () => {
     <a className="carousel-control-prev" style={prevArrowStyle} onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)}>
       &lt;
     </a>
+    <h2 className='carousel-text'>Popular Anime</h2>
     <img src={currentImage.imageUrl} alt={`Image ${currentIndex}`} style={imgStyle} />
     <a className="carousel-control-next" style={nextArrowStyle} onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}>
       &gt;
     </a>
-    <h2 className='carousel-text'></h2>
+    {/* <h2 className='carousel-text'>Popular Anime</h2> */}
   </div>
   );
 };
