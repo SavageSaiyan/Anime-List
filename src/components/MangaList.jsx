@@ -56,9 +56,11 @@ const MangaList = ({ anime }) => {
         <div className="animeDetails">
           <img src={details.images.jpg.large_image_url} alt={details.title} />
           <h1>{details.title}</h1>
-          <p>
+          <p className="summary">
             <b>Summary:</b> {details.synopsis}
           </p>
+          <iframe width="200px" height="215" src={details.trailer.embed_url} frameborder="0" allowfullscreen title="Trailer"></iframe>
+
           {/* <button className="button-hover" onClick={handleWatchlistToggle}>
             
                 {watchlistTitle.includes(details.title) 

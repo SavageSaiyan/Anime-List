@@ -141,6 +141,10 @@ button  {
     right: 200px;
 }
 
+.summary {
+  font-size: 12px;
+}
+
 /* .luffy {
   height: 100px;
   width: 100px;
