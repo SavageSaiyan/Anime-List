@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+// add images for your carousel 
 const images = [
   {
     imageUrl: 'https://cdn.myanimelist.net/images/anime/1600/134703l.jpg',
@@ -36,7 +36,7 @@ const AnimeCarousel = () => {
   }, []);
 
   const currentImage = images[currentIndex];
-
+// style the carousel
   const carouselStyle = {
     backgroundColor: currentImage.backgroundColor,
     border: '2px solid white',
@@ -49,7 +49,7 @@ const AnimeCarousel = () => {
     top: '200px',
    
   };
-
+// style the images
   const imgStyle = {
     // maxWidth: '100%',
     // maxHeight: '100%',
@@ -57,7 +57,7 @@ const AnimeCarousel = () => {
     height: '130px',
     marginRight: '300px'
   };
-
+ // style the arrows
   const arrowStyle = {
     position: 'absolute',
     top: '50%',

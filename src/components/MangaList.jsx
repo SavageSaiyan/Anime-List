@@ -46,8 +46,11 @@ const MangaList = ({ anime }) => {
                 onClick={() => handleClick(ani)}
               />
             </div>
+            
           ))}
       </div>
+
+            
 
       {details && (
         <div className="animeDetails">
@@ -74,6 +77,8 @@ const MangaList = ({ anime }) => {
 
 
       <WatchList watchlistTitle={watchlistTitle} />
+
+      
     </>
   );
 };
